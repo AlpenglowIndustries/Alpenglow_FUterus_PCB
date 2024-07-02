@@ -1,305 +1,893 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid 3f266ae0-5e5b-4400-b17a-85c7b5fdfb63)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Alpenglow:GND" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom no) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (id 1) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type outline))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Alpenglow:LED" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (id 0) (at -1.27 3.175 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "LED" (id 1) (at -4.445 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (id 3) (at 0 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "LED diode light-emitting-diode" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Light emitting diode, small symbol, filled shape" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "LED_0_1"
-        (polyline
-          (pts
-            (xy -0.762 -1.016)
-            (xy -0.762 1.016)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 0)
-            (xy -0.762 0)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 -1.016)
-            (xy -0.508 0)
-            (xy 1.016 1.016)
-            (xy 1.016 -1.016)
-          )
-          (stroke (width 0.254) (type default) (color 0 0 0 0))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -1.778 -0.254)
-            (xy -2.286 -0.762)
-            (xy -2.286 -0.508)
-            (xy -2.286 -0.762)
-            (xy -2.032 -0.762)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 -0.508)
-            (xy -1.778 -1.016)
-            (xy -1.778 -0.762)
-            (xy -1.778 -1.016)
-            (xy -1.524 -1.016)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "LED_1_1"
-        (pin passive line (at -2.54 0 0) (length 1.778)
-          (name "K" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 0 180) (length 1.778)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (symbol (lib_id "Alpenglow:LED") (at 154.94 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 2a274e7d-6741-483a-a494-d4805a54eb4e)
-    (property "Reference" "D5" (id 0) (at 154.3685 89.2642 0))
-    (property "Value" "LED" (id 1) (at 154.3685 91.8011 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 154.94 93.98 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 154.94 93.98 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6817ebaf-8763-4257-b325-cac90f4c4609))
-    (pin "2" (uuid 8023019e-0730-4374-9571-c9d8a726694d))
-  )
-
-  (symbol (lib_id "Alpenglow:LED") (at 121.92 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 7c93cdf1-963a-4c91-8c64-23fbfc2b5d61)
-    (property "Reference" "D7" (id 0) (at 121.3485 101.9642 0))
-    (property "Value" "LED" (id 1) (at 121.3485 104.5011 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 121.92 106.68 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 121.92 106.68 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 89565a64-5806-495e-897f-73397ff8335b))
-    (pin "2" (uuid 86cb830a-e1d7-41fb-919a-44179f7c8fa1))
-  )
-
-  (symbol (lib_id "Alpenglow:GND") (at 157.48 59.69 0) (unit 1)
-    (in_bom no) (on_board yes) (fields_autoplaced)
-    (uuid 7de20b77-e51f-4b6d-97fb-0c0ed1978882)
-    (property "Reference" "#PWR01" (id 0) (at 157.48 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 157.48 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (id 2) (at 157.48 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 157.48 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f1457734-34ce-482b-8eff-f1c98be9473b))
-  )
-
-  (symbol (lib_id "Alpenglow:LED") (at 135.89 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 816496d9-ad91-4b78-a475-f2673fc15ef2)
-    (property "Reference" "D6" (id 0) (at 135.3185 90.5342 0))
-    (property "Value" "LED" (id 1) (at 135.3185 93.0711 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 135.89 95.25 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 135.89 95.25 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f4b8409a-a7c6-46d2-aa9d-4e91c25af640))
-    (pin "2" (uuid e67fc06d-4ca7-4d51-9659-33f2f2594bb8))
-  )
-
-  (symbol (lib_id "Alpenglow:LED") (at 151.13 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 99812632-691d-46a1-9746-0ef4a5c7afaa)
-    (property "Reference" "D2" (id 0) (at 150.5585 74.0242 0))
-    (property "Value" "LED" (id 1) (at 150.5585 76.5611 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 151.13 78.74 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 151.13 78.74 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d1d35abf-6fad-4442-beeb-cb5d21cb8742))
-    (pin "2" (uuid 7a5ee4a5-9163-4973-aced-121e2bbb6d1d))
-  )
-
-  (symbol (lib_id "Alpenglow:LED") (at 101.6 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid ca36bc51-d54e-4ce8-8dc7-c17adb6716cb)
-    (property "Reference" "D1" (id 0) (at 101.0285 68.9442 0))
-    (property "Value" "LED" (id 1) (at 101.0285 71.4811 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 101.6 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 101.6 73.66 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 72df2573-144b-4184-9ac2-f7577d7e9129))
-    (pin "2" (uuid feec3c94-a2f2-42f9-af2a-3f4cabb229e2))
-  )
-
-  (symbol (lib_id "Alpenglow:LED") (at 129.54 81.28 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid e4b4f704-ccc1-47b2-9a19-826e85858c3c)
-    (property "Reference" "D3" (id 0) (at 128.9685 76.5642 0))
-    (property "Value" "LED" (id 1) (at 128.9685 79.1011 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 129.54 81.28 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 129.54 81.28 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 920227ea-11f5-4e7d-ba96-df206705ee70))
-    (pin "2" (uuid c0386b9a-e5ef-481b-a6c9-f9ce9149ee3c))
-  )
-
-  (symbol (lib_id "Alpenglow:LED") (at 147.32 109.22 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid e73e3726-5dba-491f-ac90-bccdd8a2454a)
-    (property "Reference" "D8" (id 0) (at 146.7485 104.5042 0))
-    (property "Value" "LED" (id 1) (at 146.7485 107.0411 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 147.32 109.22 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 147.32 109.22 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8ff23d91-2305-42e8-afce-7cb4e8192f94))
-    (pin "2" (uuid 530b1bf9-5f3d-406e-9209-bc355ad6c5ec))
-  )
-
-  (symbol (lib_id "Alpenglow:LED") (at 110.49 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid f6dbf716-ea12-4a44-8889-b204bddaf9db)
-    (property "Reference" "D4" (id 0) (at 109.9185 87.9942 0))
-    (property "Value" "LED" (id 1) (at 109.9185 90.5311 0))
-    (property "Footprint" "Alpenglow:LED_1206+" (id 2) (at 110.49 92.71 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 110.49 92.71 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e1f43dbe-4abb-488f-9ebc-91c39f7a4deb))
-    (pin "2" (uuid cfb79146-7c68-4063-a888-347be1b503e7))
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
-
-  (symbol_instances
-    (path "/7de20b77-e51f-4b6d-97fb-0c0ed1978882"
-      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/ca36bc51-d54e-4ce8-8dc7-c17adb6716cb"
-      (reference "D1") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-    (path "/99812632-691d-46a1-9746-0ef4a5c7afaa"
-      (reference "D2") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-    (path "/e4b4f704-ccc1-47b2-9a19-826e85858c3c"
-      (reference "D3") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-    (path "/f6dbf716-ea12-4a44-8889-b204bddaf9db"
-      (reference "D4") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-    (path "/2a274e7d-6741-483a-a494-d4805a54eb4e"
-      (reference "D5") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-    (path "/816496d9-ad91-4b78-a475-f2673fc15ef2"
-      (reference "D6") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-    (path "/7c93cdf1-963a-4c91-8c64-23fbfc2b5d61"
-      (reference "D7") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-    (path "/e73e3726-5dba-491f-ac90-bccdd8a2454a"
-      (reference "D8") (unit 1) (value "LED") (footprint "Alpenglow:LED_1206+")
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3f266ae0-5e5b-4400-b17a-85c7b5fdfb63")
+	(paper "USLetter")
+	(lib_symbols
+		(symbol "Alpenglow:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Alpenglow:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LED"
+				(at -4.445 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode, small symbol, filled shape"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode light-emitting-diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy -0.508 0) (xy 1.016 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.254) (xy -2.286 -0.762) (xy -2.286 -0.508) (xy -2.286 -0.762) (xy -2.032 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.508) (xy -1.778 -1.016) (xy -1.778 -0.762) (xy -1.778 -1.016) (xy -1.524 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 154.94 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a274e7d-6741-483a-a494-d4805a54eb4e")
+		(property "Reference" "D5"
+			(at 154.3685 89.2642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 154.3685 91.8011 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 154.94 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6817ebaf-8763-4257-b325-cac90f4c4609")
+		)
+		(pin "2"
+			(uuid "8023019e-0730-4374-9571-c9d8a726694d")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 121.92 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c93cdf1-963a-4c91-8c64-23fbfc2b5d61")
+		(property "Reference" "D7"
+			(at 121.3485 101.9642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 121.3485 104.5011 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 121.92 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89565a64-5806-495e-897f-73397ff8335b")
+		)
+		(pin "2"
+			(uuid "86cb830a-e1d7-41fb-919a-44179f7c8fa1")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:GND")
+		(at 157.48 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7de20b77-e51f-4b6d-97fb-0c0ed1978882")
+		(property "Reference" "#PWR01"
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1457734-34ce-482b-8eff-f1c98be9473b")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 135.89 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "816496d9-ad91-4b78-a475-f2673fc15ef2")
+		(property "Reference" "D6"
+			(at 135.3185 90.5342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 135.3185 93.0711 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 135.89 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4b8409a-a7c6-46d2-aa9d-4e91c25af640")
+		)
+		(pin "2"
+			(uuid "e67fc06d-4ca7-4d51-9659-33f2f2594bb8")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 151.13 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99812632-691d-46a1-9746-0ef4a5c7afaa")
+		(property "Reference" "D2"
+			(at 150.5585 74.0242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 150.5585 76.5611 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 151.13 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 151.13 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1d35abf-6fad-4442-beeb-cb5d21cb8742")
+		)
+		(pin "2"
+			(uuid "7a5ee4a5-9163-4973-aced-121e2bbb6d1d")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 106.68 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca36bc51-d54e-4ce8-8dc7-c17adb6716cb")
+		(property "Reference" "D1"
+			(at 106.1085 72.7542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 106.1085 75.2911 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 106.68 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72df2573-144b-4184-9ac2-f7577d7e9129")
+		)
+		(pin "2"
+			(uuid "feec3c94-a2f2-42f9-af2a-3f4cabb229e2")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 129.54 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4b4f704-ccc1-47b2-9a19-826e85858c3c")
+		(property "Reference" "D3"
+			(at 128.9685 76.5642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 128.9685 79.1011 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 129.54 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "920227ea-11f5-4e7d-ba96-df206705ee70")
+		)
+		(pin "2"
+			(uuid "c0386b9a-e5ef-481b-a6c9-f9ce9149ee3c")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 147.32 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e73e3726-5dba-491f-ac90-bccdd8a2454a")
+		(property "Reference" "D8"
+			(at 146.7485 104.5042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 146.7485 107.0411 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 147.32 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ff23d91-2305-42e8-afce-7cb4e8192f94")
+		)
+		(pin "2"
+			(uuid "530b1bf9-5f3d-406e-9209-bc355ad6c5ec")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 110.49 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6dbf716-ea12-4a44-8889-b204bddaf9db")
+		(property "Reference" "D4"
+			(at 109.9185 87.9942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 109.9185 90.5311 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:LED-SMD_L3.8-W1.0-R-RD_RED"
+			(at 110.49 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1f43dbe-4abb-488f-9ebc-91c39f7a4deb")
+		)
+		(pin "2"
+			(uuid "cfb79146-7c68-4063-a888-347be1b503e7")
+		)
+		(instances
+			(project ""
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
