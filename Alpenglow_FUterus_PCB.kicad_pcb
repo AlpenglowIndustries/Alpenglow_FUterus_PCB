@@ -5062,7 +5062,7 @@
 			(at 1.4 3.6 315)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "4edd8da1-1d47-4ad1-b645-0a54ec189436")
+			(uuid "2a8c7b8c-0707-4cc2-b5e4-7b30a0653a68")
 			(effects
 				(font
 					(size 1 1)
@@ -5074,7 +5074,7 @@
 		(property "Value" "SW_SLIDE"
 			(at 1.700001 -7.7 315)
 			(layer "B.Fab")
-			(uuid "2c7a0aa4-7544-49b7-b24a-5912a3fe2ed2")
+			(uuid "f65f7dd1-b4fb-45ae-b705-4901c93d0fa0")
 			(effects
 				(font
 					(size 1 1)
@@ -5087,7 +5087,7 @@
 			(at 0 0 315)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "623c0234-53fb-4e9e-a178-36e07445ed7f")
+			(uuid "cf23733c-30bc-402d-a383-ff5b3aba5af6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5099,7 +5099,7 @@
 			(at 0 0 315)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "b6bd760c-8dc8-4a6e-931d-0fd874051ff6")
+			(uuid "b71fb1f1-0d2d-4483-b9d7-048a0315896f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8188,6 +8188,118 @@
 		(layer "B.Mask")
 		(uuid "6f7caa6a-07a0-4ba5-9610-7a9ba5a48957")
 	)
+	(gr_line
+		(start 125.699787 121.933555)
+		(end 125.199787 121.933555)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "71992805-a6dc-4560-8aa6-54f12eddd1d2")
+	)
+	(gr_line
+		(start 125.876564 121.310332)
+		(end 125.52301 120.956778)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "7271cb84-06f2-4155-80f4-08fa807169d0")
+	)
+	(gr_line
+		(start 125.876564 122.556778)
+		(end 125.52301 122.910332)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "e3919156-5806-4d5e-8c83-76d8ab9b2365")
+	)
+	(gr_line
+		(start 126.599787 121.033555)
+		(end 126.599787 120.533555)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "d5fa93c6-412a-4fed-8c4a-c16f1caf6ba0")
+	)
+	(gr_circle
+		(center 126.599787 121.933555)
+		(end 127.099787 122.233555)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "59394433-138a-400a-b4c4-c4484aa99323")
+	)
+	(gr_line
+		(start 126.599787 122.833555)
+		(end 126.599787 123.333555)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "4845fc1f-a150-474e-9a1c-52c749798cc9")
+	)
+	(gr_line
+		(start 127.499787 121.933555)
+		(end 127.999787 121.933555)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "66bfbb81-5d11-4e9c-8fbb-d9ae8eb1461b")
+	)
+	(gr_line
+		(start 127.653341 122.987109)
+		(end 127.299787 122.633555)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "8746a52b-c0c3-4ba7-bf58-aa811166818a")
+	)
+	(gr_line
+		(start 127.676564 120.956778)
+		(end 127.32301 121.310332)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "2d4aa1c0-2ac5-4a3b-aa89-8b7baa7ff43a")
+	)
+	(gr_line
+		(start 135.6 131.1)
+		(end 137.4 131.1)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "B.SilkS")
+		(uuid "03d8b31d-1675-4b97-b563-27b152517a87")
+	)
+	(gr_circle
+		(center 136.5 131.1)
+		(end 137 131.4)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "b76e0d1a-3da5-4c9a-9d4d-a89dba35c3b1")
+	)
 	(gr_circle
 		(center 156 101)
 		(end 194.1 101)
@@ -8252,6 +8364,19 @@
 		(layers "F.Cu" "B.Cu")
 		(net "/LED+")
 		(uuid "d16d2124-745d-420c-8755-fd4f2f300f82")
+	)
+	(group ""
+		(uuid "0f609e4a-e4b6-4ad4-9211-bdef7dc9938b")
+		(members "2d4aa1c0-2ac5-4a3b-aa89-8b7baa7ff43a" "4845fc1f-a150-474e-9a1c-52c749798cc9"
+			"59394433-138a-400a-b4c4-c4484aa99323" "66bfbb81-5d11-4e9c-8fbb-d9ae8eb1461b"
+			"71992805-a6dc-4560-8aa6-54f12eddd1d2" "7271cb84-06f2-4155-80f4-08fa807169d0"
+			"8746a52b-c0c3-4ba7-bf58-aa811166818a" "d5fa93c6-412a-4fed-8c4a-c16f1caf6ba0"
+			"e3919156-5806-4d5e-8c83-76d8ab9b2365"
+		)
+	)
+	(group ""
+		(uuid "e47201e7-189f-452e-8018-e628cc2d031e")
+		(members "03d8b31d-1675-4b97-b563-27b152517a87" "b76e0d1a-3da5-4c9a-9d4d-a89dba35c3b1")
 	)
 	(embedded_fonts no)
 )
