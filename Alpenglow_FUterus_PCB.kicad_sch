@@ -314,7 +314,161 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Alpenglow:SW_SLIDE"
+		(symbol "Alpenglow:RES"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 1.27 1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "RES"
+				(at 1.27 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RES_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Alpenglow:SW_SLIDE_BIG_NOMNT"
 			(pin_numbers
 				(hide yes)
 			)
@@ -324,7 +478,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at -0.508 12.192 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -333,7 +487,7 @@
 					)
 				)
 			)
-			(property "Value" "SW_SLIDE"
+			(property "Value" "SW_SLIDE_BIG_NOMNT"
 				(at 2.54 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -377,10 +531,10 @@
 					)
 				)
 			)
-			(symbol "SW_SLIDE_0_1"
+			(symbol "SW_SLIDE_BIG_NOMNT_0_1"
 				(polyline
 					(pts
-						(xy -3.175 5.842) (xy -1.27 5.842)
+						(xy -2.54 6.35) (xy 3.175 6.35)
 					)
 					(stroke
 						(width 0.1524)
@@ -391,8 +545,8 @@
 					)
 				)
 				(circle
-					(center -3.175 5.08)
-					(radius 0.381)
+					(center -1.905 5.08)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -401,11 +555,12 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -2.54 6.5405)
-					(end -1.905 5.9055)
+				(polyline
+					(pts
+						(xy -0.254 6.35) (xy -0.254 8.89) (xy 1.016 8.89) (xy 1.016 6.35)
+					)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -413,19 +568,8 @@
 					)
 				)
 				(circle
-					(center -1.27 5.08)
-					(radius 0.381)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0.635 5.08)
-					(radius 0.381)
+					(center 6.985 5.08)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -435,10 +579,10 @@
 					)
 				)
 			)
-			(symbol "SW_SLIDE_1_1"
+			(symbol "SW_SLIDE_BIG_NOMNT_1_1"
 				(pin passive line
 					(at -5.08 5.08 0)
-					(length 1.524)
+					(length 2.54)
 					(name ""
 						(effects
 							(font
@@ -454,9 +598,9 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -1.27 2.54 90)
-					(length 2.159)
+				(pin passive inverted
+					(at 2.54 0 90)
+					(length 5.715)
 					(name ""
 						(effects
 							(font
@@ -473,8 +617,8 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 5.08 180)
-					(length 1.524)
+					(at 10.16 5.08 180)
+					(length 2.54)
 					(name ""
 						(effects
 							(font
@@ -483,24 +627,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 3.81 0)
-					(length 1.27)
-					(name "MNT"
-						(effects
-							(font
-								(size 0.508 0.508)
-							)
-						)
-					)
-					(number "MNT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -704,38 +830,38 @@
 		)
 	)
 	(junction
-		(at 114.3 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4740a8df-f4fa-479f-a7b4-98fda5e4a745")
-	)
-	(junction
-		(at 88.9 81.28)
+		(at 87.63 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67057074-f972-46c5-8a6d-9e78894ccdcc")
 	)
 	(junction
-		(at 114.3 81.28)
+		(at 113.03 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69267881-515e-4e3e-aa63-fd6f131506bb")
 	)
 	(junction
-		(at 127 63.5)
+		(at 125.73 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7dd26332-0869-4a99-8044-457a06d0152d")
+		(uuid "7b2d7647-4a81-48f3-8340-ed450f71d73a")
 	)
 	(junction
-		(at 127 81.28)
+		(at 113.03 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8cd8917d-eabc-4f0d-b892-c976e435678f")
+	)
+	(junction
+		(at 125.73 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0f01eb2-863f-4b0a-acb1-f7e561cfebe0")
 	)
 	(wire
 		(pts
-			(xy 139.7 81.28) (xy 139.7 76.2)
+			(xy 138.43 90.17) (xy 138.43 85.09)
 		)
 		(stroke
 			(width 0)
@@ -745,7 +871,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 81.28) (xy 88.9 85.09)
+			(xy 87.63 90.17) (xy 87.63 93.98)
 		)
 		(stroke
 			(width 0)
@@ -755,7 +881,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 81.28) (xy 139.7 81.28)
+			(xy 104.14 63.5) (xy 125.73 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264bb37e-fbb6-447c-8a45-1c069fb744b0")
+	)
+	(wire
+		(pts
+			(xy 125.73 90.17) (xy 138.43 90.17)
 		)
 		(stroke
 			(width 0)
@@ -765,7 +901,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 81.28) (xy 88.9 81.28)
+			(xy 67.31 90.17) (xy 87.63 90.17)
 		)
 		(stroke
 			(width 0)
@@ -775,7 +911,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 81.28) (xy 114.3 76.2)
+			(xy 113.03 90.17) (xy 113.03 85.09)
 		)
 		(stroke
 			(width 0)
@@ -785,7 +921,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 63.5) (xy 139.7 71.12)
+			(xy 125.73 63.5) (xy 138.43 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66dd0fe9-c4d7-4933-a2b7-8d7008c4cc79")
+	)
+	(wire
+		(pts
+			(xy 138.43 63.5) (xy 138.43 80.01)
 		)
 		(stroke
 			(width 0)
@@ -795,7 +941,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 67.31) (xy 90.17 67.31)
+			(xy 67.31 72.39) (xy 86.36 72.39)
 		)
 		(stroke
 			(width 0)
@@ -805,7 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 63.5) (xy 127 71.12)
+			(xy 125.73 63.5) (xy 125.73 80.01)
 		)
 		(stroke
 			(width 0)
@@ -815,17 +961,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 63.5) (xy 127 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74e16be0-d51f-476b-82da-91b39b393e0e")
-	)
-	(wire
-		(pts
-			(xy 88.9 81.28) (xy 114.3 81.28)
+			(xy 87.63 90.17) (xy 113.03 90.17)
 		)
 		(stroke
 			(width 0)
@@ -835,7 +971,17 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 67.31) (xy 68.58 69.85)
+			(xy 86.36 72.39) (xy 86.36 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96ff5a66-24e4-448c-af80-40353ede0687")
+	)
+	(wire
+		(pts
+			(xy 67.31 72.39) (xy 67.31 78.74)
 		)
 		(stroke
 			(width 0)
@@ -845,7 +991,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 77.47) (xy 68.58 81.28)
+			(xy 67.31 86.36) (xy 67.31 90.17)
 		)
 		(stroke
 			(width 0)
@@ -855,7 +1001,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 63.5) (xy 114.3 71.12)
+			(xy 113.03 63.5) (xy 113.03 80.01)
 		)
 		(stroke
 			(width 0)
@@ -865,7 +1011,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 81.28) (xy 127 76.2)
+			(xy 125.73 90.17) (xy 125.73 85.09)
 		)
 		(stroke
 			(width 0)
@@ -875,17 +1021,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 63.5) (xy 139.7 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9c76a93-18f2-4fe9-bf07-c8b31fae190b")
-	)
-	(wire
-		(pts
-			(xy 114.3 81.28) (xy 127 81.28)
+			(xy 113.03 90.17) (xy 125.73 90.17)
 		)
 		(stroke
 			(width 0)
@@ -895,17 +1031,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 67.31) (xy 90.17 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea6aee03-bc97-437b-9f08-238d3f0d56c5")
-	)
-	(wire
-		(pts
-			(xy 93.98 63.5) (xy 114.3 63.5)
+			(xy 93.98 63.5) (xy 99.06 63.5)
 		)
 		(stroke
 			(width 0)
@@ -914,7 +1040,7 @@
 		(uuid "ef6fc93d-3b7e-44db-89c4-8d5690e89c07")
 	)
 	(label "BATT+"
-		(at 72.39 67.31 0)
+		(at 72.39 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -924,7 +1050,7 @@
 		(uuid "300cba3e-4db8-4e6d-87fd-18247dfe2f19")
 	)
 	(label "LED+"
-		(at 99.06 63.5 0)
+		(at 116.84 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -934,20 +1060,19 @@
 		(uuid "64c86d05-f203-4533-ad15-d8d3a347475a")
 	)
 	(symbol
-		(lib_id "Alpenglow:GND")
-		(at 88.9 85.09 0)
+		(lib_id "Alpenglow:RES")
+		(at 101.6 63.5 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7de20b77-e51f-4b6d-97fb-0c0ed1978882")
-		(property "Reference" "#PWR01"
-			(at 88.9 91.44 0)
-			(hide yes)
+		(uuid "6a28a408-8b76-4804-9b13-b4e3096c35cc")
+		(property "Reference" "R1"
+			(at 101.6 58.3395 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -956,9 +1081,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 88.9 88.9 0)
-			(hide yes)
+		(property "Value" "RES"
+			(at 101.6 60.7638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -967,8 +1091,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 88.9 85.09 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 101.6 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -979,7 +1103,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 85.09 0)
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d596deba-f68c-4ceb-9917-14c432e801fc")
+		)
+		(pin "1"
+			(uuid "8f6d0814-6ad6-4a63-9034-d84063fe57c7")
+		)
+		(instances
+			(project "Alpenglow_FUterus_PCB"
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:GND")
+		(at 87.63 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7de20b77-e51f-4b6d-97fb-0c0ed1978882")
+		(property "Reference" "#PWR01"
+			(at 87.63 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -990,7 +1196,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 85.09 0)
+			(at 87.63 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1013,8 +1219,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Alpenglow:LED")
-		(at 127 73.66 90)
+		(lib_id "Alpenglow:SW_SLIDE_BIG_NOMNT")
+		(at 83.82 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1022,32 +1228,30 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99812632-691d-46a1-9746-0ef4a5c7afaa")
-		(property "Reference" "D2"
-			(at 128.778 73.0193 90)
+		(uuid "92e43e27-9558-4f97-a64f-87a078ca5317")
+		(property "Reference" "SW1"
+			(at 90.17 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "RED"
-			(at 128.778 75.4436 90)
+		(property "Value" "SW_SLIDE"
+			(at 86.36 58.42 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z3.0mm"
-			(at 127 73.66 90)
+		(property "Footprint" "Alpenglow:SW_SPDT_SLIDE_THRU_RTA"
+			(at 83.82 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1058,7 +1262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 73.66 90)
+			(at 83.82 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1069,7 +1273,92 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 73.66 0)
+			(at 83.82 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "c8fae62c-99f5-4c81-a764-b07c2caf4db0")
+		)
+		(pin "1"
+			(uuid "800ab64a-75a8-4821-aa07-d976b4d7e60f")
+		)
+		(pin "2"
+			(uuid "6a90c9c2-48fa-4734-8749-1ac01db7b6bb")
+		)
+		(instances
+			(project "Alpenglow_FUterus_PCB"
+				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Alpenglow:LED")
+		(at 125.73 82.55 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99812632-691d-46a1-9746-0ef4a5c7afaa")
+		(property "Reference" "D2"
+			(at 127.508 81.9093 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 127.508 84.3336 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z3.0mm"
+			(at 125.73 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1096,7 +1385,7 @@
 	)
 	(symbol
 		(lib_id "Alpenglow:LED")
-		(at 114.3 73.66 90)
+		(at 113.03 82.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1107,7 +1396,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca36bc51-d54e-4ce8-8dc7-c17adb6716cb")
 		(property "Reference" "D1"
-			(at 116.078 73.0193 90)
+			(at 114.808 81.9093 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1118,7 +1407,7 @@
 			)
 		)
 		(property "Value" "RED"
-			(at 116.078 75.4436 90)
+			(at 114.808 84.3336 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1129,7 +1418,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z3.0mm"
-			(at 114.3 73.66 90)
+			(at 113.03 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1140,7 +1429,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 73.66 90)
+			(at 113.03 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1151,7 +1440,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 73.66 0)
+			(at 113.03 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1178,7 +1467,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 68.58 74.93 0)
+		(at 67.31 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1189,7 +1478,7 @@
 		(fields_autoplaced yes)
 		(uuid "d621f439-190e-4590-a77b-b77a37683241")
 		(property "Reference" "BT1"
-			(at 71.501 71.8763 0)
+			(at 70.231 80.7663 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1199,8 +1488,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Battery_Cell"
-			(at 71.501 74.3006 0)
+		(property "Value" "CR2032"
+			(at 70.231 83.1906 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1210,8 +1499,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Alpenglow:BatteryHolder_CR2032_SMT"
-			(at 68.58 73.406 90)
+		(property "Footprint" "Alpenglow:CR2032_Holder_Clip_Through_Hole-BS-03-A1AJ001"
+			(at 67.31 82.296 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1222,7 +1511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 73.406 90)
+			(at 67.31 82.296 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1233,7 +1522,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 68.58 74.93 0)
+			(at 67.31 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1259,95 +1548,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Alpenglow:SW_SLIDE")
-		(at 91.44 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1cceffc-6434-4337-9083-cd7b0b8255e0")
-		(property "Reference" "SW1"
-			(at 90.0811 60.4463 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SLIDE"
-			(at 93.98 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Alpenglow:SW_SPDT_SLIDE_THRU_RTA"
-			(at 91.44 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 91.44 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "bd1e98eb-96dc-4786-a099-e043e18be5bf")
-		)
-		(pin "1"
-			(uuid "755d1545-df53-4de0-9b68-0d1002d044ce")
-		)
-		(pin "2"
-			(uuid "5470898e-f088-435b-8cbf-2d0a8ff58bf0")
-		)
-		(pin "MNT"
-			(uuid "66f833bd-1f80-4d5d-b877-5249a227c71b")
-		)
-		(instances
-			(project "Alpenglow_FUterus_PCB"
-				(path "/3f266ae0-5e5b-4400-b17a-85c7b5fdfb63"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Alpenglow:LED")
-		(at 139.7 73.66 90)
+		(at 138.43 82.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1358,7 +1560,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4b4f704-ccc1-47b2-9a19-826e85858c3c")
 		(property "Reference" "D3"
-			(at 141.478 73.0193 90)
+			(at 140.208 81.9093 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1369,7 +1571,7 @@
 			)
 		)
 		(property "Value" "RED"
-			(at 141.478 75.4436 90)
+			(at 140.208 84.3336 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1380,7 +1582,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z3.0mm"
-			(at 139.7 73.66 90)
+			(at 138.43 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1391,7 +1593,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 73.66 90)
+			(at 138.43 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1402,7 +1604,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 73.66 0)
+			(at 138.43 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
